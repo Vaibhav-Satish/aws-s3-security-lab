@@ -17,14 +17,14 @@ This simulates a common mistake made by developers or misconfigured CI/CD pipeli
 ### 1. Create S3 Bucket with Public Misconfiguration
 
 📸 Screenshot:  
-![Public Access Unchecked](./screenshots/00-bucket-public-setting.png)
+![Public Access Unchecked](00-bucket-public-setting.png)
 
 ---
 
 ### 2. Upload Sensitive File
 
 📸 Screenshot:  
-![Uploading File](./screenshots/01-upload-file.png)
+![Uploading File](01-upload-file.png)
 
 ---
 
@@ -46,14 +46,14 @@ This simulates a common mistake made by developers or misconfigured CI/CD pipeli
 ```
 
 📸 Screenshot:  
-![Insecure Policy](./screenshots/02-bucket-policy-public.png)
+![Insecure Policy](02-bucket-policy-public.png)
 
 ---
 
 ### 4. Access File from Internet (No Login Required)
 
 📸 Screenshot:  
-![Public File Access](./screenshots/03-public-access-browser.png)
+![Public File Access](03-public-access-browser.png)
 
 ---
 
@@ -62,21 +62,21 @@ This simulates a common mistake made by developers or misconfigured CI/CD pipeli
 ### 5. Remove Insecure Bucket Policy
 
 📸 Screenshot:  
-![Policy Removed](./screenshots/04-bucket-policy-removed.png)
+![Policy Removed](04-bucket-policy-removed.png)
 
 ---
 
 ### 6. Validate Fix (Access Denied on Public Access)
 
 📸 Screenshot:  
-![Access Denied](./screenshots/05-access-denied-browser.png)
+![Access Denied](05-access-denied-browser.png)
 
 ---
 
 ### 7. Final Bucket Overview in S3 Console
 
 📸 Screenshot:  
-![Bucket List View](./screenshots/06-bucket-list-view.png)
+![Bucket List View](06-bucket-list-view.png)
 
 ---
 
@@ -98,20 +98,19 @@ This simulates a common mistake made by developers or misconfigured CI/CD pipeli
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Files
 
 ```
 aws-s3-security-lab/
 ├── README.md
 ├── secret.txt
-└── screenshots/
-    ├── 00-bucket-public-setting.png
-    ├── 01-upload-file.png
-    ├── 02-bucket-policy-public.png
-    ├── 03-public-access-browser.png
-    ├── 04-bucket-policy-removed.png
-    ├── 05-access-denied-browser.png
-    ├── 06-bucket-list-view.png
+├── 00-bucket-public-setting.png
+├── 01-upload-file.png
+├── 02-bucket-policy-public.png
+├── 03-public-access-browser.png
+├── 04-bucket-policy-removed.png
+├── 05-access-denied-browser.png
+├── 06-bucket-list-view.png
 ```
 
 ---
